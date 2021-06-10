@@ -6,7 +6,7 @@ var mapLinks = openTilesLink + ' ' + openStadia + ' ' + osmLink;
 
 // Basemap definieren en toevoegen aan 'map'
 var basemap = L.tileLayer(
-    'https://tiles.stadiamaps.com/tiles/alidade_smooth/{z}/{x}/{y}{r}.png', {
+    'https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png', {
     attribution: mapLinks,
     maxZoom: 18,
     minZoom: 3
