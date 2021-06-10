@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Arno's website</title>
+        
+        <!-- Standaard meta tags die in elke pagina moeten zitten -->
+        <meta charset="UTF-8">
+        <meta name="description" content="Oefenwebsite van Arno Moerdijk">
+        <meta name="author" content="Arno Moerdijk">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- LEAFLET -->
+        <!-- Link naar de stylesheet van leaflet -->
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+        integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+        crossorigin=""/>
+        <!-- Link naar de javascript die belangrijk is voor leaflet -->
+        <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+        integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+        crossorigin=""></script>
+
+        <!-- link naar eigen javascript functies (defer want moeten uitgevoerd worden na div declare) -->
+        <script src="/files/js/basemap.js"></script>
+        <script src="/files/js/coronakaart.js"></script>
+
+        <!-- Benodigdheden om de standaard header en footer toe te voegen -->
+        <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
+        </script>
+
+        <!-- Link naar de standaard stylesheets -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="/files/css/stylesheet.css">
+        
+        <!-- Link naar Inetum icoontjes -->
+        <link rel="icon" type="image/png" size="16x16" href="https://www.realdolmen.com/themes/itr_theme/images/src/favicons/favicon-16x16.png">
+        <link rel="icon" type="image/png" size="32x32" href="https://www.realdolmen.com/themes/itr_theme/images/src/favicons/favicon-32x32.png">
+
+        <!-- Eigen javascript toevoegen -->
+        <script src="/files/js/main.js"></script>
+
+    </head>
+    <body>
+        <div id="page-container">
+            <div id="content-wrap">
+                <header></header>
+                <div id="map"></div>                    
+            </div>
+            <footer></footer>
+        </div>
+    </body>
+</html>
