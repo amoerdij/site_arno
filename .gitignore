@@ -348,3 +348,13 @@ MigrationBackup/
 
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
+
+.vscode/
+
+Inetum-Realdolmen_CV_Arno Moerdijk_NL_files/
+
+testsites/
+
+Inetum-Realdolmen_CV_Arno Moerdijk_NL.html
+
+mysite.code-workspace
