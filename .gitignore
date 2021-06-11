@@ -353,8 +353,9 @@ MigrationBackup/
 
 Inetum-Realdolmen_CV_Arno Moerdijk_NL_files/
 
-testsites/
+testsite/
 
 Inetum-Realdolmen_CV_Arno Moerdijk_NL.html
 
 mysite.code-workspace
+data/sitesInetumBe.geojson
