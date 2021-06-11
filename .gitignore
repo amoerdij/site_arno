@@ -362,5 +362,5 @@ testsite/
 # Workspace moet ook niet meegepubliceerd worden
 mysite.code-workspace
 
-# Deze data is overbodig.
+# Deze data is overbodig
 data/sitesInetumBe.geojson
