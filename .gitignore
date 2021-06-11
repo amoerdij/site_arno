@@ -349,13 +349,18 @@ MigrationBackup/
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
 
+# VS-code config
 .vscode/
 
+# CV getrokken uit word
 Inetum-Realdolmen_CV_Arno Moerdijk_NL_files/
-
-testsite/
-
 Inetum-Realdolmen_CV_Arno Moerdijk_NL.html
 
+# Site die gebruikt wordt om zaken te test
+testsite/
+
+# Workspace moet ook niet meegepubliceerd worden
 mysite.code-workspace
+
+# Deze data is overbodig.
 data/sitesInetumBe.geojson
