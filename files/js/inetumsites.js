@@ -1,3 +1,6 @@
+host = config.host;
+geoserver_port = config.geoserver_port;
+
 // Zorgt dat de kaart pas wordt ingeladen nadat de 'map' div is ingeladen
 window.onload = function() {
 
