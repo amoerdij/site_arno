@@ -9,7 +9,7 @@ basemap.addTo(inetumkaart)
 
 // GeoJSON met de locaties van de Inetumsites ophalen en toevoegen aan de kaart
 $.getJSON(
-    'http://localhost:8181/geoserver/Geo_Arno/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=Geo_Arno%3Ainetum_belgium&maxFeatures=50&outputFormat=application%2Fjson', 
+    'http://' + host + ':' + geoserver_port + '/geoserver/Geo_Arno/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=Geo_Arno%3Ainetum_belgium&maxFeatures=50&outputFormat=application%2Fjson', 
     function (data) {
         inetumSites = L.geoJson(data, {
             pointToLayer: function (feature, latlng) {

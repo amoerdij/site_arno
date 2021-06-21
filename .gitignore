@@ -364,3 +364,6 @@ mysite.code-workspace
 
 # Deze data is overbodig
 data/sitesInetumBe.geojson
+
+# config file moet niet meegepubliceerd worden
+config.js
