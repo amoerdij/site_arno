@@ -1,4 +1,5 @@
 var config = {
-    "webhost":"[HOSTNAME/IP]",
-    "geoserver_poort":"8080"
+    host:'localhost', // hostname
+    root:'localhost', // Rootname
+    geoserver_poort:'8080'
 }

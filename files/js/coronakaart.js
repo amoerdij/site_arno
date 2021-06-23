@@ -12,7 +12,7 @@ var coronakaart = L.map('map').setView([50.7526162,4.26319998], 8);
 basemap.addTo(coronakaart)
 
 // WMS laag met de coronacijfers ophalen vanuit de GeoServer en toevoegen aan de kaart
-L.tileLayer.wms('http://' + host + ':' + geoserver_port + '/geoserver/Geo_Arno/wms?', {
+L.tileLayer.wms(host + ':' + geoserver_port + '/geoserver/Geo_Arno/wms?', {
     layers: 'Geo_Arno:coronacases',
     format: 'image/png',
     transparent: true
@@ -82,7 +82,7 @@ var info = L.control();
 console.log(info)
 // Geojson van over de coronacijfers ophalen en als een doorzichtige laag toevoegen aan de kaart (voor pop-ups)
 $.getJSON(
-    'http://' + host + ':' + geoserver_port + '/geoserver/Geo_Arno/ows?service=WFS&version=2.0.0&request=GetFeature&typeName=Geo_Arno%3Acoronacases&maxFeatures=50&outputFormat=application%2Fjson', 
+    host + ':' + geoserver_port + '/geoserver/Geo_Arno/ows?service=WFS&version=2.0.0&request=GetFeature&typeName=Geo_Arno%3Acoronacases&maxFeatures=50&outputFormat=application%2Fjson', 
     function (data) {
         gemeenten = L.geoJson(data,
             {
@@ -127,3 +127,8 @@ $.getJSON(
 );
 
     }
+
+var mapDiv = document.createElement("div");
+mapDiv.setAttribute("id", "map");
+var content = document.getElementById("content");
+content.appendChild(mapDiv);
