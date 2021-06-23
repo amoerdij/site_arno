@@ -79,25 +79,25 @@ var header = document.getElementsByTagName("header")[0];
 // Home
 let homeAnchor = document.createElement("a");
 let homeAnchorText = document.createTextNode("Home");
-homeAnchor.setAttribute("href", host);
+homeAnchor.setAttribute("href", root);
 homeAnchor.setAttribute("class", "header_button");
 homeAnchor.appendChild(homeAnchorText);
 // Coronakaart
 let coronakaartAnchor = document.createElement("a");
 let coronakaartAnchorText = document.createTextNode("Coronakaart");
-coronakaartAnchor.setAttribute("href", host + "/coronakaart");
+coronakaartAnchor.setAttribute("href", root + "/coronakaart");
 coronakaartAnchor.setAttribute("class", "header_button");
 coronakaartAnchor.appendChild(coronakaartAnchorText);
 // Inetumsites
 let inetumsitesAnchor = document.createElement("a");
 let inetumsitesAnchorText = document.createTextNode("Inetumsites");
-inetumsitesAnchor.setAttribute("href", host + "/inetumsites");
+inetumsitesAnchor.setAttribute("href", root + "/inetumsites");
 inetumsitesAnchor.setAttribute("class", "header_button");
 inetumsitesAnchor.appendChild(inetumsitesAnchorText);
 // testsite
 let testsiteAnchor = document.createElement("a");
 let testsiteAnchorText = document.createTextNode("Testsite");
-testsiteAnchor.setAttribute("href", host + "/testsite");
+testsiteAnchor.setAttribute("href", root + "/testsite");
 testsiteAnchor.setAttribute("class", "header_button");
 testsiteAnchor.appendChild(testsiteAnchorText);
 // Secret page
