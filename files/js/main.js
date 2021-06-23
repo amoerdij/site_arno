@@ -94,12 +94,6 @@ let inetumsitesAnchorText = document.createTextNode("Inetumsites");
 inetumsitesAnchor.setAttribute("href", root + "/inetumsites");
 inetumsitesAnchor.setAttribute("class", "header_button");
 inetumsitesAnchor.appendChild(inetumsitesAnchorText);
-// testsite
-let testsiteAnchor = document.createElement("a");
-let testsiteAnchorText = document.createTextNode("Testsite");
-testsiteAnchor.setAttribute("href", root + "/testsite");
-testsiteAnchor.setAttribute("class", "header_button");
-testsiteAnchor.appendChild(testsiteAnchorText);
 // Secret page
 let secretpageAnchor = document.createElement("a");
 let secretpageAnchorText = document.createTextNode("Secret page")
@@ -111,7 +105,6 @@ secretpageAnchor.appendChild(secretpageAnchorText);
 header.appendChild(homeAnchor);
 header.appendChild(coronakaartAnchor);
 header.appendChild(inetumsitesAnchor);
-header.appendChild(testsiteAnchor);
 header.appendChild(secretpageAnchor);
 
 // Save footer tag in variable 'footer'
